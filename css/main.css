@@ -1,0 +1,293 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', Arial;
+	margin: 0;
+	display: flex;
+	max-width: 1200px;
+	padding: 10px 10px 0;
+	margin: 0 auto;
+	justify-content: center;
+}
+
+h1, h2, h3 {
+	font-weight: bold;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 1.5em;
+	color: #122255;
+	border-bottom: 1px solid #eee;
+	padding: 5px;
+	margin: 10px 0;
+}
+
+h2 {
+	font-size: 1.25em;
+	color: #122255;
+	margin: 0;
+}
+
+h3 {
+	text-transform: uppercase;
+	font-size: .875em;
+	color: #122255;
+	margin: 0;
+}
+
+img {
+	width: 150px;
+}
+
+ul {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 0;
+}
+
+li {
+	font-family: Arial;
+	font-size: .75em;
+	line-height: 1.75em;
+}
+
+#filter-form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	width: 275px;
+	box-shadow: 0 1px 5px rgba(0,0,0,.2);
+	border-radius: 2px;
+	margin: 10px;
+}
+
+#content {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 295px;
+}
+
+.wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+
+}
+
+.search {
+	width: 275px;
+	padding: 0;
+}
+
+.filter {
+	width: 100%;
+	padding: 10px 25px;
+	border: none;
+	font-size: 1.25em;
+	text-align: center;
+}
+
+.type li {
+	flex: 1 calc(50% - 5px);
+	border-radius: 2px;
+	margin: 2.5px;
+}
+
+.weaknesses li {
+	flex: 1 calc(33% - 5px);
+	border-radius: 2px;
+	margin: 2.5px;
+}
+
+.pokemon {
+	text-align: center;
+	flex: 0 275px;
+	box-shadow: 0 1px 5px rgba(0,0,0,.2);
+	border-radius: 2px;
+	padding: 10px 35px;
+	margin: 10px;
+}
+
+
+/* ----- To Top Button ----- */
+
+#button {
+	display: none;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	z-index: 1;
+}
+
+.button-link {
+	display: block;
+	text-align: center;
+	width: 30px;
+	height: 30px;
+	border-radius: 2px;
+	background: #122255;
+	opacity: .8;
+}
+
+.button-link:hover {
+	opacity: 1;
+}
+
+.button-link img {
+	width: 15px;
+	margin-top: 5px;
+}
+
+
+/* ----- Types & Weaknesses ----- */
+
+.grass {
+    background-color: #9bcc50;
+    color: #212121;
+}
+
+.poison {
+    background-color: #b97fc9;
+    color: #fff;
+}
+
+.fire {
+    background-color: #fd7d24;
+    color: #fff;
+}
+
+.normal {
+    background-color: #a4acaf;
+    color: #212121;
+}
+
+.flying {
+    background-color: #98f4ff;
+    color: #212121;
+}
+
+.dragon {
+    background-color: #f16e57;
+    color: #fff;
+}
+
+.ice {
+    background-color: #51c4e7;
+    color: #212121;
+}
+
+.water {
+    background-color: #4592c4;
+    color: #fff;
+}
+
+.bug {
+    background-color: #729f3f;
+    color: #fff;
+}
+
+.psychic {
+    background-color: #f366b9;
+    color: #fff;
+}
+
+.dark {
+    background-color: #707070;
+    color: #fff;
+}
+
+.steel {
+    background-color: #9eb7b8;
+    color: #212121;
+}
+
+.ground {
+    background-color: #e8d178;
+    color: #212121;
+}
+
+.rock {
+    background-color: #a38c21;
+    color: #fff;
+}
+
+.electric {
+    background-color: #eed535;
+    color: #212121;
+}
+
+.fighting {
+    background-color: #d56723;
+    color: #fff;
+}
+
+.fairy {
+    background-color: #fdb9e9;
+    color: #212121;
+}
+
+.ghost {
+    background-color: #7b62a3;
+    color: #fff;
+}
+
+
+
+/* ----- Media Queries ----- */
+
+@media (min-width: 627px) {
+	
+	#filter-form,
+	.search {
+		width: 570px;
+	}
+
+	#content {
+		width: 590px;
+	}
+
+	.button-link {
+	width: 45px;
+	height: 45px;
+	}
+
+	.button-link img {
+	margin-top: 15px;
+	}
+}
+
+@media (min-width: 922px) {
+	
+	#filter-form,
+	.search {
+		width: 865px;
+	}
+
+	#content {
+		width: 885px;
+	}
+
+}
+
+@media (min-width: 1217px) {
+	
+	#filter-form,
+	.search {
+		width: 1160px;
+	}
+
+	#content {
+		width: 1180px;
+	}
+
+
+}
+
