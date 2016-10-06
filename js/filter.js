@@ -6,7 +6,7 @@ $("#filter-form").append($form);
 var $input = $("<input></input>").attr({"class":"filter","type":"text","placeholder":"Search for a Pokémon..."});
 $("#filter-form .search").append($input);
 
-/* ----- Changes Sting To Capitalize ----- */
+/* ----- Changes String To Capitalize ----- */
 function capitalise(string) {
     return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
 }
@@ -15,7 +15,6 @@ function capitalise(string) {
 $input.change(function(){
 	var filter = capitalise($(this).val());
 	if (filter) {
-		var $uppercase = $("h1")
 		$(".pokemon").find("h1:not(:Contains(" + filter + "))").parent().hide();
 		$(".pokemon").find("h1:Contains(" + filter + ")").parent().show();
 	} else {
