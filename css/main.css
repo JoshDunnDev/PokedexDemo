@@ -4,12 +4,13 @@
 
 body {
 	font-family: 'Open Sans', Arial;
-	margin: 0;
+	display: -webkit-flex; 
 	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
 	max-width: 1200px;
 	padding: 10px 10px 0;
 	margin: 0 auto;
-	justify-content: center;
 }
 
 h1, h2, h3 {
@@ -43,7 +44,9 @@ img {
 }
 
 ul {
+	display: -webkit-flex; 
 	display: flex;
+	-webkit-flex-wrap: wrap;
 	flex-wrap: wrap;
 	list-style: none;
 	margin-top: 10px;
@@ -58,9 +61,6 @@ li {
 }
 
 #filter-form {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: flex-start;
 	width: 275px;
 	box-shadow: 0 1px 5px rgba(0,0,0,.2);
 	border-radius: 2px;
@@ -69,17 +69,17 @@ li {
 
 #content {
 	position: relative;
+	display: -webkit-flex; 
 	display: flex;
+	-webkit-flex-wrap: wrap;
 	flex-wrap: wrap;
+	-webkit-justify-content: center;
 	justify-content: center;
 	width: 295px;
 }
 
 .wrapper {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-
+	margin: 0 auto;
 }
 
 .search {
@@ -96,12 +96,14 @@ li {
 }
 
 .type li {
+	-webkit-flex: 1 calc(50% - 5px);
 	flex: 1 calc(50% - 5px);
 	border-radius: 2px;
 	margin: 2.5px;
 }
 
 .weaknesses li {
+	-webkit-flex: 1 calc(33% - 5px);
 	flex: 1 calc(33% - 5px);
 	border-radius: 2px;
 	margin: 2.5px;
@@ -109,13 +111,13 @@ li {
 
 .pokemon {
 	text-align: center;
+	-webkit-flex: 0 275px;
 	flex: 0 275px;
 	box-shadow: 0 1px 5px rgba(0,0,0,.2);
 	border-radius: 2px;
 	padding: 10px 35px;
 	margin: 10px;
 }
-
 
 /* ----- To Top Button ----- */
 
